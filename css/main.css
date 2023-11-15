@@ -190,7 +190,13 @@ h2 {
 
 .about {
   margin-bottom: 80px;
-  background-image: url(../../images/field_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 26, 25, 0.9)), to(rgba(20, 26, 25, 0.9))), url(../../images/mobile-about-bg.png);
+  background-image: linear-gradient(rgba(20, 26, 25, 0.9), rgba(20, 26, 25, 0.9)), url(../../images/mobile-about-bg.png);
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  margin-top: 80px;
 }
 
 p {
@@ -200,7 +206,36 @@ p {
   line-height: 22px;
   letter-spacing: 0.01em;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+}
+
+.gallery-image {
+  min-width: 288px;
+  max-width: 343px;
+}
+
+.reviews {
+  background-image: url(../../images/mobile-review-bg.jpg);
+  margin-top: 112px;
+}
+
+.reviews-title {
+  margin-bottom: 32px;
+}
+
+.review-block {
+  border: 1px solid #fff;
+  padding: 32px 32px;
+  margin-bottom: 16px;
+}
+
+.arrow-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tours-title {
@@ -254,6 +289,9 @@ h4 {
   letter-spacing: 0.01em;
   text-align: left;
   gap: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tour__icons {

@@ -1,6 +1,11 @@
 .about {
   margin-bottom: 80px;
-  background-image: url(../../images/field_bg.jpg);
+  background-image: linear-gradient(rgba(#141a19, 0.9), rgba(#141a19, 0.9)),
+    url(../../images/mobile-about-bg.png);
+  background-repeat: no-repeat;
+}
+.about-title {
+  margin-top: 80px;
 }
 p {
   font-family: Lato;
@@ -9,5 +14,5 @@ p {
   line-height: 22px;
   letter-spacing: 0.01em;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
