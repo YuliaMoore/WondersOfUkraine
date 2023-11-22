@@ -5,6 +5,7 @@
   background-size: cover;
   height: 812px;
   align-items: center;
+  text-align: center;
 }
 .hero-title {
   font-family: Jomolhari;
@@ -28,8 +29,9 @@
   font-weight: 400;
   line-height: 90px;
   letter-spacing: 0.01em;
-  text-align: left;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #box1::after {
@@ -42,6 +44,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -53,7 +57,17 @@
   color: #ffffff;
 }
 
+.social-list {
+  margin-top: 225px;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-links {
   display: inline;
-  margin: 0 auto;
+  margin-left: 15px;
+
+  :last-child {
+    margin-left: 0px;
+  }
 }

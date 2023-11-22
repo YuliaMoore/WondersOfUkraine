@@ -2,3 +2,27 @@
   min-width: 288px;
   max-width: 343px;
 }
+a {
+  justify-content: space-between;
+}
+.next {
+  margin-right: 115px;
+}
+.next,
+.prev {
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  .active {
+    color: white;
+  }
+  .block {
+    color: #5a5959;
+  }
+}
+
+.swiper {
+  width: 100%;
+}

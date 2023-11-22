@@ -24,6 +24,11 @@
   padding: 0;
   border: none;
   z-index: 2;
+  margin-left: auto;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
   @media screen and (min-width: 835px) {
     display: none;
   }
@@ -31,4 +36,14 @@
 .js-open-menu {
 }
 .icon-menu {
+  .menu-button.is-open & {
+    display: none;
+  }
+}
+.icon-cross {
+  display: none;
+
+  .icon-menu.is-open & {
+    display: block;
+  }
 }

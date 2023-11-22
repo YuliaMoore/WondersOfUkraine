@@ -111,11 +111,26 @@ h2 {
   padding: 0;
   border: none;
   z-index: 2;
+  margin-left: auto;
+}
+.menu-button:hover, .menu-button:focus {
+  cursor: pointer;
 }
 @media screen and (min-width: 835px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.icon-cross {
+  display: none;
+}
+.icon-menu.is-open .icon-cross {
+  display: block;
 }
 
 .hero {
@@ -127,6 +142,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .hero-title {
@@ -153,8 +169,9 @@ h2 {
   font-weight: 400;
   line-height: 90px;
   letter-spacing: 0.01em;
-  text-align: left;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #box1::after {
@@ -170,6 +187,8 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -183,9 +202,22 @@ h2 {
   color: #ffffff;
 }
 
+.social-list {
+  margin-top: 225px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .social-links {
   display: inline;
-  margin: 0 auto;
+  margin-left: 15px;
+}
+.social-links :last-child {
+  margin-left: 0px;
 }
 
 .about {
@@ -214,6 +246,33 @@ p {
   max-width: 343px;
 }
 
+a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.next {
+  margin-right: 115px;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.next .active,
+.prev .active {
+  color: white;
+}
+.next .block,
+.prev .block {
+  color: #5a5959;
+}
+
 .reviews {
   background-image: url(../../images/mobile-review-bg.jpg);
   margin-top: 112px;
@@ -227,15 +286,6 @@ p {
   border: 1px solid #fff;
   padding: 32px 32px;
   margin-bottom: 16px;
-}
-
-.arrow-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .tours-title {
@@ -310,4 +360,80 @@ h4 {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.01em;
+}
+
+.travel {
+  background-image: url(../../images/field_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover 800px;
+  padding-top: 94px;
+  padding-bottom: 93px;
+}
+
+.input {
+  width: 100%;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--link-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  background-color: var(--mainbackground);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+.mobile-menu.is-open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-menu__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

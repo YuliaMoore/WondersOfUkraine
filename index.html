@@ -257,7 +257,101 @@
       </div>
       <div class="container">
         <h2>Gallery</h2>
-        <img class="gallery-image" src="./images/gallery1.jpg" alt="" />
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./images/gallery1.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery2.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery3.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery4.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery5.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery6.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery7.jpg" style="width: 100%" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/gallery8.jpg" style="width: 100%" />
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <a>
+              <svg class="prev" width="114">
+                <use href="./images/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="next" width="114">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- <div class="mySlides">
+          <div class="numbertext hidden">1 / 8</div>
+          <img src="./images/gallery1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">2 / 8</div>
+          <img src="./images/gallery2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">3 / 8</div>
+          <img src="./images/gallery3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">4 / 8</div>
+          <img src="./images/gallery4.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">5 / 8</div>
+          <img src="./images/gallery5.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">6 / 8</div>
+          <img src="./images/gallery6.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">7 / 8</div>
+          <img src="./images/gallery7.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext hidden">8/ 8</div>
+          <img src="./images/gallery8.jpg" style="width: 100%" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">
+          <svg class="prev" width="114">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+          <svg class="next" width="114">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a> -->
       </div>
       <div class="container reviews">
         <h2 class="reviews-title">Reviews</h2>
@@ -275,7 +369,7 @@
           <use href="./images/sprite.svg#icon-arrow-right"></use>
         </svg>
       </div>
-      <div class="container">
+      <div class="container travel">
         <h2>Start travel</h2>
         <p>
           If you want to get an unforgettable trip, quickly fill out the
@@ -284,6 +378,36 @@
         <p>
           We are ready to answer any questions and help choose the best tour
         </p>
+        <form action="">
+          <label>
+            Name
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your name"
+              class="input"
+            />
+          </label>
+
+          <label>
+            Phone
+            <input
+              type="tel"
+              name="tel"
+              placeholder="+380__-___-___-__"
+              class="input"
+            />
+          </label>
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Your message"
+            class="input"
+          />
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </main>
     <footer>
@@ -334,5 +458,30 @@
 
       <p>© All Rights Reserved</p>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__wrap">
+        <ul class="mobile-menu__navigation">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Tours</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Gallery</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
