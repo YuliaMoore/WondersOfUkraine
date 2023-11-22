@@ -3,7 +3,8 @@ button {
   border-radius: 4px;
   border-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: black;
     border: 1px solid #ffffff;
     color: ffffff;

@@ -1,5 +1,14 @@
 {
+  "name": "wonders-of-ukraine",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://YuliaMoore.github.io/WondersOfUkraine",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /WondersOfUkraine/"
+  },
   "dependencies": {
+    "locomotive-scroll": "^4.1.4",
     "modern-normalize": "^2.0.0",
     "swiper": "^11.0.5"
   }

@@ -1,7 +1,22 @@
 .gallery-image {
-  min-width: 288px;
-  max-width: 343px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
 }
+
+@media screen and (min-width: 835px) {
+  .gal-arows,
+  .rew-arrows {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery-item {
+    width: 400px !important;
+  }
+}
+
 a {
   justify-content: space-between;
 }

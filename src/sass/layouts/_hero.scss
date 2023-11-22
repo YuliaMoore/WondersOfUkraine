@@ -6,7 +6,15 @@
   height: 812px;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: 835px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../../images/desctop_hero_bg.jpg);
+  }
 }
+
 .hero-title {
   font-family: Jomolhari;
   font-size: 24px;
@@ -39,9 +47,9 @@
   margin-top: 0;
   display: flex;
   transform: rotateX(180deg);
-  -webkit-background-clip: text;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
-  -webkit-background-clip: text;
+  // -webkit-background-clip: text;
+  // background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  // -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   vertical-align: top;
   margin-left: auto;
