@@ -1,0 +1,64 @@
+.about {
+  background-image: linear-gradient(#141a19f0, #141a19f0),
+    url(../../images/map_about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 375px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 835px) {
+    background-size: auto 574px;
+    background-position: 50% 55px;
+    padding-bottom: 155px;
+  }
+  @media screen and (min-width: 1440px) {
+    background-size: auto 573px;
+    padding-bottom: 164px;
+  }
+}
+
+.text-container {
+  font-family: Lato;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.text-topic {
+  text-align: left;
+  width: 100%;
+}
+.text-break {
+  display: block;
+  margin-top: 31px;
+}
+
+@media screen and (min-width: 835px) {
+  .about {
+    background-size: 1038px;
+    background-position: 50% 55px;
+    padding: 100px 32px;
+  }
+  .text-container {
+    margin-bottom: 63px;
+    flex-direction: row;
+  }
+  .text-topic {
+    width: calc(50% - 16px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    height: 773px;
+    padding: 100px 208px;
+    background-size: 1138px;
+    background-position: center 100px;
+  }
+  .text-topic {
+    width: 496px;
+  }
+}
