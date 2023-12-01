@@ -13,3 +13,21 @@
     width: 1440px;
   }
 }
+
+.arrow-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+
+  @media screen and (min-width: 835px) {
+    width: 500px;
+    padding: 0;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+  }
+}

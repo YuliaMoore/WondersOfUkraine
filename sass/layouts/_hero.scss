@@ -15,7 +15,7 @@
 
   @media screen and (min-width: 1440px) {
     background-image: url(../../images/desctop_hero_bg.jpg);
-    height: 800px;
+    height: 855px;
   }
 }
 
@@ -57,7 +57,7 @@
 
   @media screen and (min-width: 835px) {
     font-size: 128px;
-    line-height: 179px;
+    // line-height: 179px;
   }
 }
 
@@ -74,7 +74,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  transform: scaleY(-1);
+  transform: scaleY(-1) translateY(-20px);
 }
 
 .hero-button {
@@ -99,14 +99,14 @@
   padding-bottom: 32px;
 
   @media screen and (min-width: 835px) {
-    padding-bottom: 64px;
+    bottom: 64px;
     margin-right: auto;
     flex-direction: column;
+    left: 96%;
   }
 
   @media screen and (min-width: 1440px) {
     padding-bottom: 100px;
-    margin-right: auto;
   }
 }
 

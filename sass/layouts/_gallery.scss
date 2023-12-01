@@ -1,8 +1,82 @@
+// .gallery-image {
+//   border-radius: 4px;
+//   overflow: hidden;
+//   display: block;
+//   width: 100%;
+
+//   @media screen and (min-width: 1440px) {
+//     width: 400px;
+//   }
+// }
+
+// @media screen and (min-width: 835px) {
+//   .gal-arows,
+//   .rew-arrows {
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: 1440px) {
+//   .gallery-item {
+//     width: 400px;
+//   }
+// }
+
+// a {
+//   justify-content: space-between;
+// }
+// .next {
+//   margin-right: 115px;
+// }
+// .next,
+// .prev {
+//   cursor: pointer;
+
+//   user-select: none;
+//   -webkit-user-select: none;
+
+//   .active {
+//     color: white;
+//   }
+//   .block {
+//     color: #5a5959;
+//   }
+// }
+
+// .swiper {
+//   width: 100%;
+// }
+
+// .gallery-image {
+//   border-radius: 4px;
+//   overflow: hidden;
+//   display: block;
+//   width: 100%;
+// }
+
+// @media screen and (min-width: $tab) {
+//   .gal-arows,
+//   .rew-arrows {
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: $dsk) {
+//   .gallery-item {
+//     width: 400px !important;
+//   }
+// }
+
 .gallery-image {
   border-radius: 4px;
   overflow: hidden;
   display: block;
-  width: 100%;
+  word-wrap: 343px;
+
+  @media screen and (min-width: 835px) {
+    width: 377px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 835px) {
@@ -17,27 +91,31 @@
   }
 }
 
-a {
+.swiper-buttons__wrapper--gallery {
+  display: flex;
   justify-content: space-between;
-}
-.next {
-  margin-right: 115px;
-}
-.next,
-.prev {
-  cursor: pointer;
-
-  user-select: none;
-  -webkit-user-select: none;
-
-  .active {
-    color: white;
+  margin-top: 32px;
+  @media screen and (min-width: 835px) {
+    margin-top: 64px;
   }
-  .block {
-    color: #5a5959;
+  @media screen and (min-width: 1440px) {
+    margin-right: 32px;
   }
 }
 
-.swiper {
-  width: 100%;
-}
+// .gallery-img {
+//   border-radius: 4px;
+//   margin: 0 auto;
+//   width: 100%;
+// }
+// .swiper-buttons__wrapper--gallery {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 32px;
+//   @media screen and (min-width: 835px) {
+//     margin-top: 64px;
+//   }
+//   @media screen and (min-width: 1440px) {
+//     margin-right: 32px;
+//   }
+// }
